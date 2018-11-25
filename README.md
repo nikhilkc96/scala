@@ -8,10 +8,10 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89
 sudo apt-get update
 sudo apt-get install sbt
 
-# the following command will take several minutes. it will finally start a sbt shell.
+ the following command will take several minutes. it will finally start a sbt shell.
 sbt
 
-# exit the shell by typing exit at the prompt, i.e.
+ exit the shell by typing exit at the prompt, i.e.
 exit
 
 -- not needed----------
@@ -20,28 +20,28 @@ sudo apt-get remove --purge openjdk* java-common default-jdk
 sudo apt-get remove --purge sbt
 sudo apt-get autoremove --purge
 
-# Check weather you successfully removed all related packages by:
+ Check weather you successfully removed all related packages by:
 
 sudo update-alternatives --config java
 
-# The system shall prompt you there is no Java available to config, otherwise this workaround fails.
+ The system shall prompt you there is no Java available to config, otherwise this workaround fails.
 
-# Then reinstall required packages:
+ Then reinstall required packages:
 
 sudo apt-get install openjdk-8-jdk sbt
 
-# In ~/.bashrc, change JAVA_HOME as below:
+ In ~/.bashrc, change JAVA_HOME as below:
 
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 
-# quit the terminal and restart another terminal.
+ quit the terminal and restart another terminal.
 
-# Go to project directory and run sbt as
+ Go to project directory and run sbt as
 sbt
 
-# exit sbt shell by typing exit, i.e. type exit at prompt sbt:student>
+ exit sbt shell by typing exit, i.e. type exit at prompt sbt:student>
 
-# getting scala
+ getting scala
 sudo apt-get install scala
 
 
