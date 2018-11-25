@@ -1,11 +1,14 @@
 # scala
-Scala is a general-purpose programming language providing support for functional programming and a strong static type system. Designed to be concise, many of Scala's design decisions aimed to address criticisms of Java
+Scala is a general-purpose programming language providing support for functional programming and a strong static
+type system. Designed to be concise, many of Scala's design decisions aimed to address criticisms of Java
 
 # sbt and scala install steps 
 
 echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
+
 sudo apt-get update
+
 sudo apt-get install sbt
 
  the following command will take several minutes. it will finally start a sbt shell.
